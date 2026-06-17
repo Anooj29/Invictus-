@@ -1,0 +1,9 @@
+opencv-python
+numpy
+face-recognition
+tflite-runtime
+pyttsx3
+google-genai
+RPi.GPIO
+pyserial
+
