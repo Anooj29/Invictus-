@@ -1,11 +1,13 @@
 import numpy as np
 from numpy import *
 
+# length of the links 
 a1 = 6.2 
 a2 = 5.2 
 a3 = 0 
 a4 = 7 
 
+# motor angles 
 theta_1 = 30 
 theta_2 = 60 
 
