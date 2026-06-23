@@ -55,5 +55,5 @@ print(f"z = {position[2]:.4f}")
 
 rotation = T_final[0:3, 0:3]   
 
-print("\n>> End Effector Position\n")
+print("\n>> Rotation Matrix\n")
 print(np.round(rotation, 4))
