@@ -32,7 +32,7 @@ for row in dh_table:
     T = dh_parameter(theta, d, r, alpha)
     T_matrices.append(T)
     
-print("\n==============Individual Transformation Matrices ============\n")
+print("\n>> Individual Transformation Matrice\n")
 
 for i, T in enumerate(T_matrices):
     print(f"T{i}{i+1} =")
@@ -43,17 +43,17 @@ T_final = np.eye(4)
 for T in T_matrices:
     T_final = T_final @ T
     
-print("\n==============Final Transformation Matrix===============\n")
+print("\n>> Final Transformation Matrix\n")
 print(np.round(T_final, 4))
 
 position = T_final[0:3, 3]
 
-print("\n================End Effector Position==============/n")
+print("\n>> End Effector Position\n")
 print(f"x = {position[0]:.4f}")
 print(f"y = {position[1]:.4f}")
 print(f"z = {position[2]:.4f}") 
 
 rotation = T_final[0:3, 0:3]   
 
-print("\n================End Effector Position==============/n")
+print("\n>> End Effector Position\n")
 print(np.round(rotation, 4))
